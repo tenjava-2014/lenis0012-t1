@@ -1,0 +1,3 @@
+name: lenis0012-t1
+main: com.tenjava.entries.lenis0012.t1.TenJava
+version: '${project.version}'
