@@ -29,4 +29,6 @@ features:
         # Whether or not this weapon is enabled and can be used
         enabled: true
         # Wealth of the weapon, the higher this value is, the more chance the weapon has to spawn in a chest.
-        wealth: 50
+        wealth: 5
+        # Speed of the fireball the hammer shoots away.
+        speed: 2.0

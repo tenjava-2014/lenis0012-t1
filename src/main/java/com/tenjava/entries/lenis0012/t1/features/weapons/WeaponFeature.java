@@ -14,11 +14,10 @@ public class WeaponFeature extends BaseFeature {
 
     @Override
     public void enable() {
-
+        //Nothing to put here actualy.
     }
 
     @Override
     public void disable() {
-
     }
 }

@@ -5,6 +5,7 @@ import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 /**
  * Created by Lenny on 12-7-2014.
@@ -32,6 +33,19 @@ public abstract class BaseWeapon {
      */
     public boolean check(ItemStack item) {
         return item != null && item.getType() == material && item.hasItemMeta() && item.getItemMeta().hasDisplayName() && item.getItemMeta().getDisplayName().equals(displayName);
+    }
+
+    /**
+     * Get the item of the weapon
+     *
+     * @return Make a new item and return it.
+     */
+    public ItemStack getItem() {
+        ItemStack item = new ItemStack(material, 1);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName(displayName);
+        item.setItemMeta(meta);
+        return item;
     }
 
     /**
