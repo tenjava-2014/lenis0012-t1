@@ -14,7 +14,7 @@ public class WeaponFeature extends BaseFeature {
 
     @Override
     public void enable() {
-        //Nothing to put here actualy.
+        register(new WeaponListener());
     }
 
     @Override
