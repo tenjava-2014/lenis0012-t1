@@ -12,3 +12,6 @@ features:
       # Define how high the chests may spawn
       minY: 20
       maxY: 30
+    # Worlds where these chests can spawn
+    worlds:
+    - world
