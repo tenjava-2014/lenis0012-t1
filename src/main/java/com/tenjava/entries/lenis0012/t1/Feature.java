@@ -39,7 +39,7 @@ public enum Feature {
     }
 
     public boolean enable() {
-        if(TenJava.getInstance().getConfig().getBoolean("features." + name)) {
+        if(TenJava.getInstance().getConfig().getBoolean("features." + name + ".enabled")) {
             instance.onEnable();
             return true;
         }
