@@ -32,3 +32,5 @@ features:
         wealth: 5
         # Speed of the fireball the hammer shoots away.
         speed: 2.0
+        # Radius of the explosion
+        radius: 4
