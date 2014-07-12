@@ -25,7 +25,7 @@ public enum Weapon {
 
     private Weapon(String name, Class<? extends BaseWeapon> weaponClass) {
         this.name = name;
-        this.config = TenJava.getInstance().getConfig().getConfigurationSection("features.weapons." + name);
+        this.config = TenJava.getInstance().getConfig().getConfigurationSection("features.weapons.types." + name);
         this.enabled = config.getBoolean("enabled");
         if(enabled) {
             try {
