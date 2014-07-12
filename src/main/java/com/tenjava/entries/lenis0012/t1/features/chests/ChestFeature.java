@@ -14,7 +14,7 @@ public class ChestFeature extends BaseFeature {
 
     @Override
     public void enable() {
-
+        register(new ChestListener(this));
     }
 
     @Override

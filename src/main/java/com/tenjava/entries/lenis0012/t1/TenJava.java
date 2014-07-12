@@ -2,6 +2,8 @@ package com.tenjava.entries.lenis0012.t1;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.logging.Level;
+
 public class TenJava extends JavaPlugin {
     private static TenJava instance;
 
@@ -27,7 +29,9 @@ public class TenJava extends JavaPlugin {
 
         //Enable all features
         for(Feature feature : Feature.values()) {
-            feature.enable();
+            if(feature.enable()) {
+                getLogger().log(Level.INFO, "Enabled feature: " + feature.getName());
+            }
         }
     }
 

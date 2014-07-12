@@ -38,8 +38,13 @@ public enum Feature {
         }
     }
 
-    public void enable() {
-        instance.enable();
+    public boolean enable() {
+        if(TenJava.getInstance().getConfig().getBoolean("features." + name)) {
+            instance.onEnable();
+            return true;
+        }
+
+        return false;
     }
 
     public void disable() {
