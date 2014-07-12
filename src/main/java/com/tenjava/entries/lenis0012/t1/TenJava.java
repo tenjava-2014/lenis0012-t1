@@ -16,7 +16,7 @@ public class TenJava extends JavaPlugin {
     public void onLoad() {
         //Load all features
         for(Feature feature : Feature.values()) {
-            feature.load();
+            feature.load(this);
         }
     }
 

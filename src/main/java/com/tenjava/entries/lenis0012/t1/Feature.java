@@ -29,9 +29,10 @@ public enum Feature {
         return name;
     }
 
-    public void load() {
+    public void load(TenJava plugin) {
         try {
-            Constructor<? extends BaseFeature> constructor = baseClass.getConstructor(TenJava.class);
+            Constructor<? extends BaseFeature> constructor = baseClass.getConstructor(TenJava.class, String.class);
+            this.instance = constructor.newInstance(plugin, name);
         } catch (Exception e) {
             TenJava.getInstance().getLogger().log(Level.SEVERE, "Failed to load feature", e);
         }

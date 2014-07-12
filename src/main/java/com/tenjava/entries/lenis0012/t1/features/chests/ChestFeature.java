@@ -8,8 +8,8 @@ import com.tenjava.entries.lenis0012.t1.features.BaseFeature;
  */
 public class ChestFeature extends BaseFeature {
 
-    public ChestFeature(TenJava plugin) {
-        super(plugin);
+    public ChestFeature(TenJava plugin, String name) {
+        super(plugin, name);
     }
 
     @Override
