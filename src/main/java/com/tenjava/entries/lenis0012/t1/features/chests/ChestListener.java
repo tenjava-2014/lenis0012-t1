@@ -61,7 +61,7 @@ public class ChestListener implements Listener {
 
             //Generate items
             Map<Integer, Weapon> wealthList = Weapon.getWealthList();
-            int weapons = minWeapons + maxWeapons > minWeapons ? random.nextInt(maxWeapons - minWeapons) : 0;
+            int weapons = minWeapons + (maxWeapons > minWeapons ? random.nextInt(maxWeapons - minWeapons) : 0);
             for(int i = 0; i < weapons; i++) {
                 int index = random.nextInt(wealthList.size());
                 Weapon weapon = wealthList.get(index);
