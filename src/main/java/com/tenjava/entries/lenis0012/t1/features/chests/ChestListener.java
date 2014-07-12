@@ -1,9 +1,8 @@
 package com.tenjava.entries.lenis0012.t1.features.chests;
 
-import org.bukkit.Chunk;
-import org.bukkit.Material;
-import org.bukkit.World;
+import org.bukkit.*;
 import org.bukkit.configuration.ConfigurationSection;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.world.ChunkPopulateEvent;
@@ -48,6 +47,13 @@ public class ChestListener implements Listener {
 
             //Set to chest
             chunk.getBlock(x, y, z).setType(Material.CHEST);
+
+            //Notify players
+            for(Player player : Bukkit.getOnlinePlayers()) {
+                if(player.hasPermission("tenjava.chests.notifyspawn")) {
+                    player.sendMessage(String.format("%sA weapon chest has spawned at %sX%d Y%d Z%d", ChatColor.GREEN, ChatColor.GRAY, x, y, z));
+                }
+            }
         }
     }
 }
