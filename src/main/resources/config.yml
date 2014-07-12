@@ -34,3 +34,6 @@ features:
         speed: 2.0
         # Radius of the explosion
         radius: 4
+        # Define how many lightning strikes there will be
+        min-lightning: 2
+        max-lightning: 5
