@@ -10,6 +10,7 @@ public enum Weapon {
     private final Class<?> weaponClass;
 
     private Weapon(String name, Class<?> weaponClass) {
-
+        this.name = name;
+        this.weaponClass = weaponClass;
     }
 }
