@@ -32,9 +32,9 @@ public class ChestListener implements Listener {
         this.worlds = config.getStringList("worlds");
         this.spawnChance = config.getInt("spawning.spawn-chance");
         this.minY = config.getInt("spawning.minY");
-        this.maxY = config.getInt("spawning.maxY");
+        this.maxY = config.getInt("spawning.maxY") + 1;
         this.minWeapons = config.getInt("spawning.min-weapons");
-        this.maxWeapons = config.getInt("spawning.max-weapons");
+        this.maxWeapons = config.getInt("spawning.max-weapons") + 1;
     }
 
     @EventHandler
