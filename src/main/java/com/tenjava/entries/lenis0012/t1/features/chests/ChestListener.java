@@ -49,9 +49,11 @@ public class ChestListener implements Listener {
             chunk.getBlock(x, y, z).setType(Material.CHEST);
 
             //Notify players
+            int cx = chunk.getX() * 16 + x; //Chunk x + x
+            int cz = chunk.getZ() * 16 + z; //Chunk z + z
             for(Player player : Bukkit.getOnlinePlayers()) {
                 if(player.hasPermission("tenjava.chests.notifyspawn")) {
-                    player.sendMessage(String.format("%sA weapon chest has spawned at %sX%d Y%d Z%d", ChatColor.GREEN, ChatColor.GRAY, x, y, z));
+                    player.sendMessage(String.format("%sA weapon chest has spawned at %sX%d Y%d Z%d", ChatColor.GREEN, ChatColor.GRAY, cx, y, cz));
                 }
             }
         }
