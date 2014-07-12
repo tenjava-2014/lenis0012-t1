@@ -3,7 +3,7 @@ features:
   # The chest feature randomly spawns chests in certain areas.
   # It contains custom weapons featured in the weapon feature
   chests:
-    # Wether or not the chests feature should be enabled.
+    # Whether or not the chests feature should be enabled.
     enabled: true
     # Spawning details to define how much and where the chests should spawn
     spawning:
@@ -12,6 +12,21 @@ features:
       # Define how high the chests may spawn
       minY: 20
       maxY: 30
+      # Define how many weapons spawn in a chest
+      min-weapons: 1
+      max-weapons: 1
     # Worlds where these chests can spawn
     worlds:
     - world
+  weapons:
+    # Whether or not the weapons feature should be enabled.
+    # I highly advice enabling this one.
+    enabled: true
+    # Weapon type configuration
+    types:
+      # Thors hammer configuration
+      ThorHammer:
+        # Whether or not this weapon is enabled and can be used
+        enabled: true
+        # Wealth of the weapon, the higher this value is, the more chance the weapon has to spawn in a chest.
+        wealth: 50
