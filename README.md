@@ -48,6 +48,7 @@ OPs will receive notifications with the locations so that you can teleport to it
 
 Weapons
 -------
+Left click to use weapons
 Thor's hammer:
 Thor's hammer an iron axe that shoots fireballs at a custom speed.
 Once this ball hits a block it created an amazing explosion and strike lightning.
