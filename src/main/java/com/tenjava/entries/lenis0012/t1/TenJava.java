@@ -4,6 +4,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Level;
 
+/**
+ * Combat can only be improved with my fancy code.
+ * Extra weapons put into secret chests under the ground.
+ * THIS IS HELL IN A PLUGIN!!!!!
+ */
 public class TenJava extends JavaPlugin {
     private static TenJava instance;
 
