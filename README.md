@@ -29,7 +29,26 @@ Usage
 -----
 
 1. Install plugin
-2. Do things with it
+2. Edit config.yml to fit your needs
+3. Restart server
+4. Find the hidden chests and enjoy your weapons.
 
-<!-- Hi, lenis0012! This is the default README for every ten.java submission. -->
-<!-- We encourage you to edit this README with some information about your submission – keep in mind you'll be scored on documentation! -->
+Docs
+----
+This plugin adds new hidden chests to the world that contain new weapons.
+Sadly i only made 1 weapon because i ran out of time
+My alarm clock didn't go off and im going to a party.
+Players with the permission 'tenjava.chests.notifyspawn' get a notification when a chest spawns.
+
+Chests
+------
+Chests have a certain chance of spawning in a newly generated chunk.
+They spawn in a range of 20-30Y by default which can be changed.
+OPs will receive notifications with the locations so that you can teleport to it and grab your loot.
+
+Weapons
+-------
+Thor's hammer:
+Thor's hammer an iron axe that shoots fireballs at a custom speed.
+Once this ball hits a block it created an amazing explosion and strike lightning.
+I recommend shooting this on trees for optimal amusement.
